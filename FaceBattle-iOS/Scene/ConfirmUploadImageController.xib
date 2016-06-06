@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmUploadImageController">
+            <connections>
+                <outlet property="cancelButton" destination="k4S-L6-uWo" id="eOX-I3-lRB"/>
+                <outlet property="chooseImageView" destination="Sp7-gM-o0A" id="1xp-tY-YDK"/>
+                <outlet property="sureButton" destination="iY4-xG-MA3" id="wqO-sE-Ism"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sp7-gM-o0A">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4S-L6-uWo">
+                    <rect key="frame" x="30" y="508" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.32156862749999998" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="k4S-L6-uWo" secondAttribute="height" multiplier="13:2" id="Nce-I1-xsW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="CHOOSE ANOTHER ONE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPLOAD AND ANAYLIZE THIS PHOTO?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45P-DR-soR">
+                    <rect key="frame" x="20" y="421" width="280" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY4-xG-MA3">
+                    <rect key="frame" x="30" y="453" width="260" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.82745098039999998" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iY4-xG-MA3" secondAttribute="height" multiplier="13:2" id="pWt-Oa-7tJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="SURE~">
+                        <color key="titleColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="45P-DR-soR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="1CM-qU-pze"/>
+                <constraint firstItem="k4S-L6-uWo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="6eV-SZ-z7h"/>
+                <constraint firstAttribute="trailing" secondItem="45P-DR-soR" secondAttribute="trailing" constant="20" id="6xx-1K-S3R"/>
+                <constraint firstAttribute="trailing" secondItem="iY4-xG-MA3" secondAttribute="trailing" constant="30" id="Fam-4e-YLy"/>
+                <constraint firstItem="iY4-xG-MA3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="GJC-pc-6yT"/>
+                <constraint firstAttribute="bottom" secondItem="Sp7-gM-o0A" secondAttribute="bottom" constant="170" id="Mek-fL-dfX"/>
+                <constraint firstAttribute="trailing" secondItem="k4S-L6-uWo" secondAttribute="trailing" constant="30" id="N1K-dd-ypw"/>
+                <constraint firstItem="Sp7-gM-o0A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gea-Ml-xgQ"/>
+                <constraint firstAttribute="bottom" secondItem="k4S-L6-uWo" secondAttribute="bottom" constant="20" id="kW6-zh-bP2"/>
+                <constraint firstItem="k4S-L6-uWo" firstAttribute="top" secondItem="iY4-xG-MA3" secondAttribute="bottom" constant="15" id="mIq-aN-6fz"/>
+                <constraint firstAttribute="trailing" secondItem="Sp7-gM-o0A" secondAttribute="trailing" id="pQI-NT-8ch"/>
+                <constraint firstItem="iY4-xG-MA3" firstAttribute="top" secondItem="45P-DR-soR" secondAttribute="bottom" constant="15" id="tFn-6X-H1p"/>
+                <constraint firstItem="Sp7-gM-o0A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w9D-Yj-MHl"/>
+            </constraints>
+            <point key="canvasLocation" x="370" y="241"/>
+        </view>
+    </objects>
+</document>

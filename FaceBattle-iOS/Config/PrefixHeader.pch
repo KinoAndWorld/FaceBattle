@@ -1,0 +1,43 @@
+//
+//  MeiYuanPrefixHeader.pch
+//  MeiYuan
+//
+//  Created by kino on 16/3/31.
+//
+//
+
+#ifndef MeiYuanPrefixHeader_pch
+#define MeiYuanPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+//基础扩展
+#import <BFKit/BFKit.h>
+
+//#import <YYCategories.h>
+
+//#import <YYKit.h>
+#import <Masonry/Masonry.h>
+#import <ReactiveCocoa.h>
+
+//全局UI组件
+#import "CYLTabBarController.h"
+//#import "RDVTabBarItem.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+
+//convenient
+#import "GlobalDefines.h"
+#import "AppElementConfig.h"
+
+#import "NSObject+DataCommon.h"
+#import "UIColor+FlatUI.h"
+
+//model
+#import "UserManager.h"
+
+
+#endif /* MeiYuanPrefixHeader_pch */
