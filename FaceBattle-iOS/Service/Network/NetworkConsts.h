@@ -20,8 +20,7 @@ typedef enum {
 }APIMethod;
 
 
-//KODefineAPI(BASE_API_URL, @"https://api.500px.com")
-KODefineAPI(BASE_API_URL, @"http://yian.me/facebattle")
+KODefineAPI(BASE_API_URL, @"")
 KODefineAPI(TEST_BASE_API_URL,  @"http://localhost:3000")
 
 /**
