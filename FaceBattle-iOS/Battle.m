@@ -80,14 +80,7 @@
     
     NSString *result = @"";
     float max = 0.f;
-//    if (_disgust > max) {
-//        max = _disgust;
-//        result = @"disgust";
-//    }
-//    if (_contempt > max) {
-//        max = _disgust;
-//        result = @"contempt";
-//    }
+    
     if (_anger > max) {
         max = _anger;
         result = @"anger";
@@ -100,18 +93,6 @@
         max = _sadness;
         result = @"sadness";
     }
-//    if (_fear > max) {
-//        max = _disgust;
-//        result = @"";
-//    }
-//    if (_surprise > max) {
-//        max = _disgust;
-//        result = @"";
-//    }
-//    if (_neutral > max) {
-//        max = _disgust;
-//        result = @"";
-//    }
     
     return @{@"name" : result, @"score" : @(max)};
 }
