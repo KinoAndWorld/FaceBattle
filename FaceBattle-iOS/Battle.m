@@ -11,11 +11,11 @@
 @implementation Battle
 
 + (NSDictionary *)modelCustomPropertyMapper{
-    return @{@"startTime" : @"stater.time",
-             @"startUsername" : @"stater.username",
-             @"startPid" : @"stater.pid",
-             @"startUid" : @"stater.uid",
-             @"startScore" : @"stater.score",
+    return @{@"startTime" : @"starter.time",
+             @"startUsername" : @"starter.username",
+             @"startPid" : @"starter.pid",
+             @"startUid" : @"starter.uid",
+             @"startScore" : @"starter.score",
              
              @"parterUid" : @"participator.uid",
              @"parterTime" : @"participator.time",

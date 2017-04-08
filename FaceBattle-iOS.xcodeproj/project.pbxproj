@@ -1394,6 +1394,8 @@
 				TargetAttributes = {
 					38F82B441D029DE400E1BAB4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KB24KHX8D8;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1820,6 +1822,8 @@
 			baseConfigurationReference = 10F2FF8DF4F819D193CFCF72 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = KB24KHX8D8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceBattle-iOS/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = "FaceBattle-iOS/Info.plist";
@@ -1827,6 +1831,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Kino.FaceBattle-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9563f96-e96f-43f1-a1c2-ccb8100c26ec";
+				PROVISIONING_PROFILE_SPECIFIER = aep_incommonuse;
 			};
 			name = Debug;
 		};
@@ -1835,6 +1841,8 @@
 			baseConfigurationReference = 7876509D1664EF19B8ADA09F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = KB24KHX8D8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceBattle-iOS/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = "FaceBattle-iOS/Info.plist";
@@ -1842,6 +1850,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Kino.FaceBattle-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9563f96-e96f-43f1-a1c2-ccb8100c26ec";
+				PROVISIONING_PROFILE_SPECIFIER = aep_incommonuse;
 			};
 			name = Release;
 		};
